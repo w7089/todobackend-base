@@ -1,11 +1,4 @@
-FROM ubuntu:trusty
-MAINTAINER Justin Menga <justin.menga@gmail.com>
-
-# Prevent dpkg errors
-ENV TERM=xterm-256color
-
-# Set mirrors to NZ
-# RUN sed -i "s/http:\/\/archive./http:\/\/nz.archive./g" /etc/apt/sources.list
+FROM ubuntu:18.04
 
 # Install Python runtime
 RUN apt-get update && \
